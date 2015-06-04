@@ -43,14 +43,14 @@ button {
 }
 .headerLogo {
 	width: 300px;
-	height: 60px;
+	height: 130px;
 	left: 50%;
-	bottom: 30px;
+	bottom: 50px;
 	z-index: 20;
-	margin-left: -150px;
-	background: rgba(255, 0, 0, 0.3);
+	margin-left: -150px; 
 	position: absolute;
-	background-color: 100% auto;
+	background-size: 100% auto;
+	background-image:url(../images/logo.png); 
 }
 .headerPanel {
 	width: 100%;
@@ -61,6 +61,12 @@ button {
 	bottom: 0;
 	position: absolute;
 	background: rgba(0,0,0,0.5);
+}
+.headerImage:before {
+	content: '';
+	width: 100%;
+	height: 100%;display: block;
+	background: rgba(0,0,0,.4);
 }
 .headerImage {
 	width: 100%;
@@ -130,11 +136,31 @@ button {
 	left: 20px;
 	z-index: 5;
 }
-.linkBoxes li .boxInfo h2 {
-	text-align: center;
-	padding: 0.1em 0.3em;
+.linkBoxes li .boxInfo h2 { 
+	padding: 0.1em 0.4em;
 	display: block;
+	font-size: 23px;
 	background: #000;
+	color: rgba(255,255,255, 0.7);
+}
+.linkBoxes li .boxInfo h2.soundcloud { 
+	background: #954306;
+	background: rgba(149, 67, 6,1);
+}
+.linkBoxes li .boxInfo h2.mixcloud { 
+	background: rgba(11, 125, 97, 1);
+}
+.linkBoxes li .boxInfo h2.twitter { 
+	background: rgba(6, 114, 149, 1);
+}
+.linkBoxes li .boxInfo h2.facebook { 
+	background: rgba(6, 74, 149, 1);
+}
+.linkBoxes li .boxInfo p { 
+	display: block;
+	padding-left:  0.6em;
+	margin-top: 0.5em;
+	font-size: 16px;
 	color: rgba(255,255,255, 0.7);
 }
 
@@ -148,6 +174,11 @@ button {
 }
 .footer p {
 	display: inline-block;
+	color: rgba(255,255,255, .5);
+}
+.footer p a {
+	display: inline-block;
+	color: #288cbb;
 }
 	/* MEDIA QUERIES FOR BASIC TEMPLATE */
 	/* SMARTPHONES PORTRAIT */
@@ -163,7 +194,7 @@ button {
 			height: 100%;
 			position: absolute;
 			top: 0%;
-			left: -50%;
+			left: -110%;
 			margin-top: 0;
 
 			/* display: none; */  /* This image is only for seo */
@@ -185,7 +216,7 @@ button {
  	
 		.headerLogo {
 			width: 400px;
-			height: 80px;  
+			height: 175px;  
 			margin-left: -200px; 
 		}
 
@@ -206,12 +237,12 @@ button {
 		*/
 		.headerImage img {
 			width: 100%; 
-			margin-top: -35%;
+			margin-top: -33%;
 		}
 		.headerLogo {
-			width: 500px;
-			height: 100px;  
-			margin-left: -250px; 
+			width: 400px;
+			height: 175px;  
+			margin-left: -200px; 
 		} 
 	}  
 	/* TABLET LANDSCAPE / DESKTOP */

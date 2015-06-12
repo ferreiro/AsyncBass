@@ -9,6 +9,6 @@ if (width >= 1000) {
 *   Making the boxes height, proportional to their width 
 */
 $(window).resize(function () {
-  box.css({'height': $('.linkBoxes li').width() / 1.6});
+  box.css({'height': box.width() / 1.6});
 }); 
   
